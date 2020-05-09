@@ -10,13 +10,13 @@ public class Employee{
 	private int basicPay;
 
 	// Constructor
-	public Employee(int employeeID , int basicPay, String[] args){
+	public Employee(int employeeID , int basicPay , String employeeName , String salaryType , String methodOfPayment , String partOfUnion ){
 		this.employeeID = employeeID;
 		this.basicPay = basicPay;
-		this.employeeName = args[0];
-		this.salaryType = args[1];
-		this.methodOfPayment = args[2];
-		this.partOfUnion = args[3];
+		this.employeeName = employeeName;
+		this.salaryType = salaryType;
+		this.methodOfPayment = methodOfPayment;
+		this.partOfUnion = partOfUnion;
 	}
 
 	public int getEmployeeID(){
