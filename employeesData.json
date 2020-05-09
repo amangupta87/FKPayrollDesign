@@ -1,0 +1,26 @@
+[
+	{
+		"employeeName":"Aman Gupta",
+		"salaryType":"FLAT",
+		"methodOfPayment":"POST",
+		"basicPay":50000,
+		"employeeID":1,
+		"partOfUnion":"NO"
+	},
+	{
+	    "employeeID": 2,
+	    "employeeName": "Aman Gupta",
+	    "salaryType": "FLAT",
+	    "methodOfPayment": "BANK",
+	    "partOfUnion": "NO",
+	    "basicPay": 10000
+  	},
+  	{
+	    "employeeID": 3,
+	    "employeeName": "David Malan",
+	    "salaryType": "SALES",
+	    "methodOfPayment": "PICKUP",
+	    "partOfUnion": "YES",
+	    "basicPay": 20000
+  	}
+]
