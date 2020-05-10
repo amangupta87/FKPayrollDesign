@@ -1,26 +1,7 @@
-[
-	{
-		"employeeName":"Aman Gupta",
-		"salaryType":"FLAT",
-		"methodOfPayment":"POST",
-		"basicPay":50000,
-		"employeeID":1,
-		"partOfUnion":"NO"
-	},
-	{
-	    "employeeID": 2,
-	    "employeeName": "Aman Gupta",
-	    "salaryType": "FLAT",
-	    "methodOfPayment": "BANK",
-	    "partOfUnion": "NO",
-	    "basicPay": 10000
-  	},
-  	{
-	    "employeeID": 3,
-	    "employeeName": "David Malan",
-	    "salaryType": "SALES",
-	    "methodOfPayment": "PICKUP",
-	    "partOfUnion": "YES",
-	    "basicPay": 20000
-  	}
+[{"amountOfSales":0,"employeeName":"David Fury","unionDues":664,"extraHours":0,"commissionRate":0,"salaryType":"FLAT","methodOfPayment":"POST","basicPay":60000,"employeeID":2,"partOfUnion":"YES","hourlyRate":0,"duesRate":90},
+	{"amountOfSales":0,"employeeName":"Gabbar","unionDues":210,"extraHours":7,"commissionRate":0,"salaryType":"HOURLY","methodOfPayment":"POST","basicPay":0,"employeeID":69,"partOfUnion":"YES","hourlyRate":60,"duesRate":700},
+	{"amountOfSales":540,"employeeName":"RoHITMAN","unionDues":0,"extraHours":0,"commissionRate":0,"salaryType":"FLAT","methodOfPayment":"BANK","basicPay":48000,"employeeID":45,"partOfUnion":"YES","hourlyRate":0,"duesRate":688},
+	{"amountOfSales":5,"employeeName":"Aman Sir","unionDues":0,"extraHours":12,"commissionRate":12,"salaryType":"SALES","methodOfPayment":"BANK","basicPay":70000,"employeeID":70,"partOfUnion":"NO","hourlyRate":0,"duesRate":0},
+	{"amountOfSales":0,"employeeName":"Leo Tolstoy","unionDues":0,"extraHours":2,"commissionRate":0,"salaryType":"HOURLY","methodOfPayment":"PICKUP","basicPay":0,"employeeID":1,"partOfUnion":"YES","hourlyRate":10000,"duesRate":6000},
+	{"amountOfSales":0,"employeeName":"Elon Musk","unionDues":0,"extraHours":0,"commissionRate":0,"salaryType":"FLAT","methodOfPayment":"BANK","basicPay":10000000,"employeeID":3,"partOfUnion":"NO","hourlyRate":0,"duesRate":0}
 ]
