@@ -28,17 +28,40 @@ public class addEmployee{
 		Scanner in4 = new Scanner(System.in); 
 		String methodOfPayment = in4.nextLine();
 
-		System.out.println("Is Employee part of union? : Answer YES or NO");
+		System.out.println("Is Employee part of union? Answer in capitals: YES or NO");
 		Scanner in5 = new Scanner(System.in); 
 		String partOfUnion = in5.nextLine();
 
-		System.out.println("Enter the basic pay salary of employee");
-		Scanner in6 = new Scanner(System.in); 
-		int basicPay = in6.nextInt();
+		int basicPay = 0;
+		if(!salaryType.equals("HOURLY")){
+			System.out.println("Enter the basic pay salary of employee");
+			Scanner in6 = new Scanner(System.in); 
+			basicPay = in6.nextInt();
+		}
 
-		JSONParser parser = new JSONParser();
-		JSONArray arr = (JSONArray)parser.parse(new FileReader("employeesData.json"));
+		int unionDues = 0;
+		int duesRate = 0;
+		if(partOfUnion.equals("YES")){
+			System.out.println("Enter the amount of dues employee pays weekly to the union");
+			Scanner in7 = new Scanner(System.in); 
+			duesRate = in7.nextInt();
+		}
 
+		int commissionRate = 0;
+		int amountOfSales = 0;
+		if(salaryType.equals("SALES")){
+			System.out.println("Enter the percentage of commission employee receives on sales made by him/her");
+			Scanner in8 = new Scanner(System.in); 
+			commissionRate = in8.nextInt();
+		}
+
+		int hourlyRate = 0;
+		int extraHours = 0;
+		if(salaryType.equals("HOURLY")){
+			System.out.println("Enter the rate which you receive per hour");
+			Scanner in9 = new Scanner(System.in); 
+			hourlyRate = in9.nextInt();
+		}
 
 		JSONObject newEmployee = new JSONObject();
 		newEmployee.put("employeeID" , employeeID);
@@ -47,13 +70,17 @@ public class addEmployee{
 		newEmployee.put("salaryType" , salaryType);
 		newEmployee.put("methodOfPayment" , methodOfPayment);
 		newEmployee.put("partOfUnion" , partOfUnion);
-
+		newEmployee.put("hourlyRate" , hourlyRate);
+		newEmployee.put("extraHours" , extraHours);
+		newEmployee.put("commissionRate" , commissionRate);
+		newEmployee.put("amountOfSales" , amountOfSales);
+		newEmployee.put("unionDues" , unionDues);
+		newEmployee.put("duesRate" , duesRate);
+		JSONParser parser = new JSONParser();
+		JSONArray arr = (JSONArray)parser.parse(new FileReader("employeesData.json"));
 
 		arr.add(newEmployee);
-		FileWriter fileWriter = new FileWriter("employeesData.json");   // Add employee details to employeesData file
-		fileWriter.write(arr.toJSONString());  
-        fileWriter.flush();  
-        fileWriter.close();  
+		FileWriter fileWriter = E
 
 	}
 }

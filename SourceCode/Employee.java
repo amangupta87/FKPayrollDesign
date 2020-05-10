@@ -8,6 +8,13 @@ public class Employee{
 	private String methodOfPayment;
 	private String partOfUnion;
 	private int basicPay;
+	private int hourlyRate;
+	private int extraHours;
+	private int commissionRate;
+	private int amountOfSales;
+	private int unionDues;
+	private int duesRate;
+
 
 	// Constructor
 	public Employee(int employeeID , int basicPay , String employeeName , String salaryType , String methodOfPayment , String partOfUnion ){
@@ -41,6 +48,30 @@ public class Employee{
 
 	public int getBasicPay(){
 		return this.basicPay;
+	}
+
+	public int getHourlyRate(){
+		return this.hourlyRate;
+	}
+
+	public int getExtraHours(){
+		return this.extraHours;
+	}
+
+	public int getCommissionRate(){
+		return this.commissionRate;
+	}
+
+	public int getAmountOfSales(){
+		return this.amountOfSales;
+	}
+
+	public int getUnionDues(){
+		return this.unionDues;
+	}
+
+	public int getDuesRate(){
+		return this.duesRate;
 	}
 
 }
