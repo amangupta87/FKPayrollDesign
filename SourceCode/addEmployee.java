@@ -80,7 +80,10 @@ public class addEmployee{
 		JSONArray arr = (JSONArray)parser.parse(new FileReader("employeesData.json"));
 
 		arr.add(newEmployee);
-		FileWriter fileWriter = E
+		FileWriter fileWriter = new FileWriter("employeesData.json");  
+		fileWriter.write(arr.toJSONString());  
+        	fileWriter.flush();  
+        	fileWriter.close();  
 
 	}
 }
