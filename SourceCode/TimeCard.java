@@ -43,9 +43,9 @@ public class TimeCard{
 
 			}
 
-			if(flag==0){
-				arr2.add(employee);
-			}
+// 			if(flag==0){
+// 				arr2.add(employee);
+// 			}
 
 			FileWriter fileWriter = new FileWriter("employeesData.json");  
 			fileWriter.write(arr2.toJSONString());  
